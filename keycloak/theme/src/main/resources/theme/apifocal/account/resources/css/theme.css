@@ -1,0 +1,21 @@
+/*header*/
+.navbar-pf {
+    border-top-color: #e53538;
+    background: #293038;
+}
+
+/*sidebar*/
+.bs-sidebar ul li.active a {
+    border-color: #e53538;
+    background: #f9edee;
+}
+
+/*navbar*/
+.navbar-pf .navbar-utility > li > a:hover {
+    background: #393d48;
+}
+
+/* buttons */
+.btn {
+  -webkit-appearance: none;
+}

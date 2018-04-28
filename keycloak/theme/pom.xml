@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.apifocal.id</groupId>
+        <artifactId>keycloak</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>org.apifocal.id.keycloak</groupId>
+    <artifactId>theme</artifactId>
+
+    <name>Apifocal ID | Keycloak | Theme</name>
+    <description>Custom theme for keycloak.</description>
+
+</project>

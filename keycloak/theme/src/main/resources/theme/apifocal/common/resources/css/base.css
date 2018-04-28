@@ -1,0 +1,51 @@
+/*helpers*/
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+
+/*links*/
+a {
+  color: #e53538;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #f84346;
+}
+
+/* buttons */
+.btn {
+  -webkit-appearance: none;
+}
+
+.btn-primary {
+  color: #fff;
+  background: #e53538;
+  border: 1px solid #e53538;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background: #f84346;
+  border-color: #f84346;
+}
+
+/*inputs*/
+.form-control:hover,
+.form-control:focus {
+  border-color: #dd3538;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(229, 53, 56, 0.2);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(229, 53, 56, 0.2);
+}
+
+/*switches*/
+.onoffswitch .onoffswitch-inner .onoffswitch-active {
+  background: #35e58a;
+}

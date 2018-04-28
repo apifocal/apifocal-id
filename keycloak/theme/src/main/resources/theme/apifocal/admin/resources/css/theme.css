@@ -1,0 +1,97 @@
+/*logo*/
+.navbar-pf .navbar-brand {
+  width: 175px;
+  background: url("../img/logo.png") center no-repeat;
+}
+
+/* buttons */
+.btn {
+  -webkit-appearance: none;
+}
+
+/*navigation*/
+.navbar-pf {
+  background: #293038;
+}
+
+/*sidebar*/
+.sidebar-pf-left {
+  background: #293038;
+}
+
+.realm-selector h2 {
+  border-color: #393d48;
+}
+
+/*dropdown menus*/
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #fff;
+  background-color: #393d48;
+  border-color: #393d48;
+}
+
+.dropdown-menu > li > a:active {
+  background-color: #393d48;
+  border-color: #393d48;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  background-color: #393d48 !important;
+  border-color: #393d48 !important;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #e53538;
+}
+
+.navbar-pf {
+  background: #293038;
+  border-top: 3px solid #293038;
+}
+
+.navbar-pf .navbar-header {
+  border-bottom: 1px solid #393d48;
+}
+
+.navbar-pf .navbar-utility > .active > a,
+.navbar-pf .navbar-utility > .active > a:hover,
+.navbar-pf .navbar-utility > .active > a:focus,
+.navbar-pf .navbar-utility > .open > a,
+.navbar-pf .navbar-utility > .open > a:hover,
+.navbar-pf .navbar-utility > .open > a:focus {
+  background: #393d48;
+}
+
+.navbar-pf .navbar-utility > li > a:hover {
+  background: #393d48;
+}
+
+.nav-tabs-pf > li.active > a,
+.nav-tabs-pf > li.active > a:active,
+.nav-tabs-pf > li.active > a:focus,
+.nav-tabs-pf > li.active > a:hover {
+  color: #e53538;
+}
+.nav-tabs-pf > li.active > a:before,
+.nav-tabs-pf > li.active > a:active:before,
+.nav-tabs-pf > li.active > a:focus:before,
+.nav-tabs-pf > li.active > a:hover:before {
+  background: #e53538;
+}
+
+/*sidebar menu*/
+.sidebar-pf .nav-pills > li.active a i,
+.sidebar-pf .nav-pills > li.active a span {
+  color: #e53538;
+}
+
+.sidebar-pf .nav-pills > li.active > a {
+  border-top-color: #393f44 !important;
+  border-bottom-color: #393f44 !important;
+  border-left-color: #e53538 !important;
+}

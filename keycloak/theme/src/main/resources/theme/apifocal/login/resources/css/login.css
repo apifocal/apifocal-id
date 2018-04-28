@@ -1,0 +1,152 @@
+html {
+    height: 100%;
+}
+
+body {
+    padding: 100px 0 0 0;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background: #242b33 url("../img/background.jpg") center no-repeat;
+}
+
+#kc-container {
+  width: 455px;
+  margin: 0 auto;
+}
+
+/* headings */
+h1 {
+  margin-bottom: 10px;
+  padding-top: 20px;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+h1 span {
+  font-weight: 700;
+}
+
+h2 {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* links */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: underline;
+    color: #e53538;
+}
+
+/*buttons*/
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 2px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+/* inputs */
+.form-control {
+  width: 350px;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* alerts */
+.alert {
+  margin-bottom: 15px;
+  background: none !important;
+}
+
+.alert-error {
+  color: #f84346 !important;
+}
+
+/*dropdowns*/
+#kc-locale {
+  margin: 15px 0;
+}
+
+.kc-dropdown {
+  position: relative;
+}
+
+.kc-dropdown:hover {
+  background: #242b33;
+}
+
+.kc-dropdown ul {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: auto;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #242b33;
+}
+
+.kc-dropdown a {
+  display: block;
+  padding: 3px;
+  text-decoration: none;
+}
+
+.kc-dropdown a:hover,
+.kc-dropdown a:focus,
+.kc-dropdown a:active {
+  color: #fff;
+  background: #f84346;
+}
+
+.kc-dropdown:hover ul {
+  display: block;
+}
+
+@media only screen and (max-width: 980px) {
+  html,
+  body {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+      padding: 100px 40px 40px 40px;
+    }
+
+    .form-control {
+      width: 93.5%;
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+
+    img {
+      width: auto;
+      max-width: 100%;
+    }
+    
+    #kc-container {
+      width: auto;
+    }
+}

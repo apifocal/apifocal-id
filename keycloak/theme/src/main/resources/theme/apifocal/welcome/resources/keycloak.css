@@ -1,0 +1,142 @@
+/*
+  ~ JBoss, Home of Professional Open Source.
+  ~ Copyright (c) 2011, Red Hat, Inc., and individual contributors
+  ~ as indicated by the @author tags. See the copyright.txt file in the
+  ~ distribution for a full listing of individual contributors.
+  ~
+  ~ This is free software; you can redistribute it and/or modify it
+  ~ under the terms of the GNU Lesser General Public License as
+  ~ published by the Free Software Foundation; either version 2.1 of
+  ~ the License, or (at your option) any later version.
+  ~
+  ~ This software is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+  ~ Lesser General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Lesser General Public
+  ~ License along with this software; if not, write to the Free
+  ~ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+  ~ 02110-1301 USA, or see the FSF site: http://www.fsf.org.
+*/
+
+html {
+    height: 100%;
+}
+
+body {
+    margin-top: 100px;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background: #242b33 url("background.jpg") center no-repeat;
+}
+
+#kc-container {
+  width: 455px;
+  margin: 0 auto;
+}
+
+/* headings */
+h1 {
+  margin-bottom: 10px;
+  padding-top: 20px;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+h1 span {
+  font-weight: 700;
+}
+
+h2 {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* links */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: underline;
+    color: #e53538;
+}
+
+/*buttons*/
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 2px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.btn-primary {
+  color: #fff;
+  background: #e53538;
+  border: 1px solid #e53538;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  color: #fff;
+  background: #f84346;
+  border-color: #f84346;
+  text-decoration: none;
+}
+
+/* inputs */
+.form-control {
+  width: 350px;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* alerts */
+.alert {
+  margin-bottom: 15px;
+  background: none !important;
+}
+
+.alert-error {
+  color: #f84346 !important;
+}
+
+/* helpers */
+.error {
+  color: #e53538;
+}
+
+@media only screen and (max-width: 980px) {
+  html,
+  body {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+    img {
+      width: auto;
+      max-width: 100%;
+    }
+    
+    #kc-container {
+      width: auto;
+    }
+}
