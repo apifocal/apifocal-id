@@ -19,29 +19,20 @@ limitations under the License.
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.apifocal</groupId>
-        <artifactId>apifocal-parent</artifactId>
-        <version>11-SNAPSHOT</version>
+        <groupId>org.apifocal.id</groupId>
+        <artifactId>keycloak</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>org.apifocal</groupId>
-    <artifactId>id</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <groupId>org.apifocal.id.keycloak</groupId>
+    <artifactId>extension</artifactId>
     <packaging>pom</packaging>
 
-    <name>Apifocal ID</name>
-    <description>Apifocal identity server project.</description>
-
-    <scm>
-        <connection>scm:git:git@github.com:apifocal/apifocal-id.git</connection>
-        <developerConnection>scm:git:git@github.com:apifocal/apifocal-id.git</developerConnection>
-        <tag>HEAD</tag>
-        <url>https://github.com/apifocal/apifocal-id</url>
-    </scm>
+    <name>Apifocal ID | Keycloak | Extension</name>
+    <description>Keycloak extensions.</description>
 
     <modules>
-        <module>parent</module>
-        <module>keycloak</module>
+        <module>attributes</module>
     </modules>
 
 </project>

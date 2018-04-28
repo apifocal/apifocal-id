@@ -13,25 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package org.apifocal.id.keycloak.extension.attributes;
 
-/*header*/
-.navbar-pf {
-    border-top-color: #e53538;
-    background: #293038;
-}
+/**
+ * Message keys which are returned from validation.
+ */
+public class Messages {
 
-/*sidebar*/
-.bs-sidebar ul li.active a {
-    border-color: #e53538;
-    background: #f9edee;
-}
+    /**
+     * Message returned when user attributes processing is completely disabled.
+     */
+    public static final String USER_ATTRIBUTES_NOT_EXPECTED = "user.attributes.not_expected";
 
-/*navbar*/
-.navbar-pf .navbar-utility > li > a:hover {
-    background: #393d48;
-}
+    /**
+     * When given attribute is blacklisted or missing on white list - this message is set on it.
+     */
+    public static final String USER_ATTRIBUTE_NOT_EXPECTED = "user.attribute.not_expected";
 
-/* buttons */
-.btn {
-  -webkit-appearance: none;
 }

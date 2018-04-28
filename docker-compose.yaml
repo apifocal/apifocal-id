@@ -1,0 +1,38 @@
+version: '3'
+
+volumes:
+  mysql-apifocal-id:
+    driver: local
+
+services:
+  mysql-accounts:
+    image: mysql:5.7
+    volumes:
+      - mysql-apifocal-id:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: apifocalid
+      MYSQL_USER: apifocalid
+      MYSQL_PASSWORD: password
+    ports:
+      - 3406:3306
+
+  apifocal-id:
+    image: docker-tmp.apifocal.org:5001/apifocal-id:latest_x86_64
+    command: ["-b", "0.0.0.0", ""]
+    environment:
+      MYSQL_ADDR: mysql-accounts
+      MYSQL_DATABASE: apifocalid
+      MYSQL_USER: apifocalid
+      MYSQL_PASSWORD: password
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: Pa55w0rd
+      KEYCLOAK_LOGLEVEL: TRACE
+      #JAVA_OPTS: -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5006 -server -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true
+      #-Dhttp.proxyHost=192.168.2.106 -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true
+      #HTTP_PROXY: http://192.168.2.106:8888
+    ports:
+      - 192.168.2.106:8080:8080
+      - 5006:5006
+    depends_on:
+      - mysql-accounts
