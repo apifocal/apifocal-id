@@ -1,0 +1,12 @@
+{
+  "themes": [{
+    "name" : "apifocal",
+    "types": [
+      "admin",
+      "account",
+      "login",
+      "common",
+      "welcome"
+    ]
+  }]
+}
