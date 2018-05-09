@@ -14,8 +14,9 @@
  * limitations under the License.
  */
 
-html {
-    height: 100%;
+html,
+body {
+    min-height: 100%;
 }
 
 body {
@@ -139,13 +140,6 @@ a:active {
   display: block;
 }
 
-@media only screen and (max-width: 980px) {
-  html,
-  body {
-    height: auto;
-  }
-}
-
 @media only screen and (max-width: 767px) {
     body {
       padding: 100px 40px 40px 40px;
@@ -164,5 +158,13 @@ a:active {
     
     #kc-container {
       width: auto;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 14px;
     }
 }

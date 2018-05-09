@@ -14,8 +14,9 @@
  * limitations under the License.
  */
 
-html {
-    height: 100%;
+html,
+body {
+    min-height: 100%;
 }
 
 body {
@@ -118,13 +119,25 @@ a:active {
 }
 
 @media only screen and (max-width: 980px) {
-  html,
   body {
-    height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
 
 @media only screen and (max-width: 767px) {
+    body {
+      padding: 100px 40px 40px 40px;
+    }
+
+    .form-control {
+      width: 93.5%;
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+
     img {
       width: auto;
       max-width: 100%;
@@ -132,5 +145,13 @@ a:active {
     
     #kc-container {
       width: auto;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 14px;
     }
 }
