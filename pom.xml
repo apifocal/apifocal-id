@@ -20,8 +20,8 @@ limitations under the License.
 
     <parent>
         <groupId>org.apifocal</groupId>
-        <artifactId>apifocal-parent</artifactId>
-        <version>11-SNAPSHOT</version>
+        <artifactId>apifocal-oss</artifactId>
+        <version>1</version>
     </parent>
 
     <groupId>org.apifocal</groupId>
