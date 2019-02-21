@@ -32,18 +32,18 @@ limitations under the License.
     <description>Parent for modules defined in project.</description>
 
     <properties>
-        <keycloak.version>3.4.3.Final</keycloak.version>
-        <jboss-logging.version>3.3.1.Final</jboss-logging.version>
+        <keycloak.version>4.8.3.Final</keycloak.version>
+        <jboss-logging.version>3.3.2.Final</jboss-logging.version>
 
         <slf4j.version>1.7.25</slf4j.version>
-        <log4j.version>2.10.0</log4j.version>
+        <log4j.version>2.11.2</log4j.version>
         
-        <assertj.version>3.9.1</assertj.version>
-        <junit-jupiter.version>5.1.0</junit-jupiter.version>
-        <junit-platform.version>1.1.0</junit-platform.version>
-        <mockito.version>2.15.0</mockito.version>
+        <assertj.version>3.12.0</assertj.version>
+        <junit-jupiter.version>5.4.0</junit-jupiter.version>
+        <junit-platform.version>1.4.0</junit-platform.version>
+        <mockito.version>2.24.5</mockito.version>
 
-        <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
+        <maven-surefire-plugin.version>2.22.1</maven-surefire-plugin.version>
     </properties>
 
     <dependencyManagement>
@@ -125,6 +125,11 @@ limitations under the License.
                 <version>${junit-jupiter.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>${junit-jupiter.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
                 <version>${mockito.version}</version>
@@ -141,18 +146,6 @@ limitations under the License.
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>${maven-surefire-plugin.version}</version>
-                    <dependencies>
-                        <dependency>
-                            <groupId>org.junit.platform</groupId>
-                            <artifactId>junit-platform-surefire-provider</artifactId>
-                            <version>${junit-platform.version}</version>
-                        </dependency>
-                        <dependency>
-                            <groupId>org.junit.jupiter</groupId>
-                            <artifactId>junit-jupiter-engine</artifactId>
-                            <version>${junit-jupiter.version}</version>
-                        </dependency>
-                    </dependencies>
                 </plugin>
             </plugins>
         </pluginManagement>
