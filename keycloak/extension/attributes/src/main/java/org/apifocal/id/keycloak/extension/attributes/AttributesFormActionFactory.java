@@ -56,7 +56,7 @@ public class AttributesFormActionFactory implements FormActionFactory {
 
     private static final AuthenticationExecutionModel.Requirement[] REQUIREMENT_CHOICES = new AuthenticationExecutionModel.Requirement[] {
         AuthenticationExecutionModel.Requirement.REQUIRED,
-        AuthenticationExecutionModel.Requirement.OPTIONAL,
+        AuthenticationExecutionModel.Requirement.CONDITIONAL,
         AuthenticationExecutionModel.Requirement.DISABLED
     };
 
