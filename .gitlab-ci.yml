@@ -1,0 +1,12 @@
+deploy:
+  stage: deploy
+  image: apifocal/maven
+  tags:
+    - maven
+  script:
+    - mkdir -p ~/.m2
+    - echo $M2_SETTINGS | base64 -d > ~/.m2/settings.xml
+    - echo $M2_SETTINGS_SECURITY | base64 -d > ~/.m2/settings-security.xml
+    - mvn clean deploy
+  only:
+    - master
