@@ -32,7 +32,7 @@ limitations under the License.
     <description>Parent for modules defined in project.</description>
 
     <properties>
-        <keycloak.version>11.0.3</keycloak.version>
+        <keycloak.version>18.0.0</keycloak.version>
         <jboss-logging.version>3.4.1.Final</jboss-logging.version>
 
         <slf4j.version>1.7.30</slf4j.version>
